@@ -396,7 +396,7 @@ export function VerificationAnimation({ inputValue, method, onComplete }: Verifi
                 <Heart className="w-8 h-8 text-primary fill-primary animate-pulse" />
                 <Search className="w-4 h-4 text-white absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
               </div>
-              <span className="font-bold text-lg md:text-xl hacker-title-glow">ДЕТЕКТОР ВЕРНОСТИ ОНЛАЙН</span>
+              <span className="font-bold text-lg md:text-xl hacker-title-glow">ПРОВЕРКА НА ВЕРНОСТЬ ОНЛАЙН</span>
             </div>
             <div className="flex items-center gap-4 text-xs md:text-sm">
               <span className="text-gray-400">

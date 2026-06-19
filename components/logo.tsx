@@ -18,7 +18,7 @@ const sizeMap = {
 }
 
 /**
- * Brand logo for "Детектор верности онлайн".
+ * Brand logo for "Проверка на верность онлайн".
  * A heart with an embedded magnifier — symbolising the analysis of a relationship.
  */
 export function Logo({ asLink = true, showTagline = true, size = "md", className = "" }: LogoProps) {
@@ -32,7 +32,7 @@ export function Logo({ asLink = true, showTagline = true, size = "md", className
       </span>
       <span className="flex flex-col leading-none">
         <span className={`text-white font-bold ${s.title} leading-tight`}>
-          Детектор <span className="text-primary">верности&nbsp;онлайн</span>
+          Проверка&nbsp;на <span className="text-primary">верность&nbsp;онлайн</span>
         </span>
         {showTagline && (
           <span className={`text-muted-foreground ${s.tag} tracking-wide`}>
@@ -48,7 +48,7 @@ export function Logo({ asLink = true, showTagline = true, size = "md", className
       <Link
         href="/"
         className="flex items-center gap-2 hover:opacity-80 transition-opacity"
-        aria-label="Детектор верности онлайн — на главную"
+        aria-label="Проверка на верность онлайн — на главную"
       >
         {content}
       </Link>

@@ -60,7 +60,7 @@ const nextConfig = {
                   value: "http",
                 },
               ],
-              destination: "https://v0-love-chek.vercel.app/:path*",
+              destination: "https://v0-check-love-online.vercel.app/:path*",
               permanent: true,
             },
           ]

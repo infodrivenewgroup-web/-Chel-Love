@@ -28,7 +28,7 @@ export default function CoursesPage() {
 
           <div className="text-center">
             <h1 className="text-3xl md:text-5xl font-bold mb-6 leading-tight">
-              <span className="text-gradient">Премиум-Курсы «Детектор верности онлайн»</span>
+              <span className="text-gradient">Премиум-Курсы «Проверка на верность онлайн»</span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
               Профессиональные курсы для построения идеальных отношений

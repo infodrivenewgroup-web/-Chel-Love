@@ -54,7 +54,7 @@ export default function NotFound() {
               <Heart className="w-7 h-7 text-primary fill-primary" />
               <Search className="w-3 h-3 text-white absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
             </div>
-            <span className="text-white font-bold text-lg">Детектор верности онлайн</span>
+            <span className="text-white font-bold text-lg">Проверка на верность онлайн</span>
           </Link>
           <Link href="/" className="text-sm text-muted-foreground hover:text-white transition-colors">
             На главную
@@ -227,9 +227,9 @@ export default function NotFound() {
               <Heart className="w-6 h-6 text-primary fill-primary" />
               <Search className="w-3 h-3 text-white absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
             </div>
-            <span className="text-white font-bold">Детектор верности онлайн</span>
+            <span className="text-white font-bold">Проверка на верность онлайн</span>
           </div>
-          <p className="text-muted-foreground text-xs">© All Rights Reserved. «Детектор верности онлайн» 2023-2025.</p>
+          <p className="text-muted-foreground text-xs">© All Rights Reserved. «Проверка на верность онлайн» 2023-2025.</p>
         </div>
       </footer>
     </div>
