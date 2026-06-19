@@ -1,7 +1,7 @@
 "use client"
 
-import { useState, useEffect } from "react"
-import { CheckCircle2, Shield, Headphones, UserCheck, Lock } from "lucide-react"
+import { useState, useEffect, useRef } from "react"
+import { CheckCircle2, Shield, Headphones, UserCheck, Lock, Loader2 } from "lucide-react"
 import { sendYmGoal, upsertLead, isLeadSaved, redirectToSiteB } from "@/lib/lead-tracking"
 
 export function ResultsPage() {
@@ -9,6 +9,8 @@ export function ResultsPage() {
   const [originalPrice] = useState(2499)
   const [discountedPrice] = useState(1999)
   const [isDiscountActive, setIsDiscountActive] = useState(true)
+  const [isRedirecting, setIsRedirecting] = useState(false)
+  const redirectedRef = useRef(false)
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -31,14 +33,33 @@ export function ResultsPage() {
   }
 
   const handleGetReport = () => {
+    // Guard against double-clicks / repeated redirects.
+    if (redirectedRef.current) return
+    setIsRedirecting(true)
+
+    const go = () => {
+      if (redirectedRef.current) return
+      redirectedRef.current = true
+      // Redirect to site "Б" /payment with lead_id + yclid + UTM (never phone_or_vk).
+      redirectToSiteB()
+    }
+
+    // Absolute safety net: guarantee the user reaches /payment within 3s,
+    // even if Metrika and the lead upsert both stall.
+    const hardFallback = setTimeout(go, 3000)
+
     // 1. Send click_polychit goal to counter 109840176 first.
     sendYmGoal("click_polychit", async () => {
-      // 2. Ensure the lead is saved on site "Б" (only if not already saved).
-      if (!isLeadSaved()) {
-        await upsertLead()
+      try {
+        // 2. Ensure the lead is saved on site "Б" (only if not already saved).
+        if (!isLeadSaved()) {
+          await upsertLead()
+        }
+      } finally {
+        // 3. Proceed to payment regardless of upsert result (never lose the client).
+        clearTimeout(hardFallback)
+        go()
       }
-      // 3. Redirect to site "Б" /payment with lead_id + yclid + UTM (never phone_or_vk).
-      redirectToSiteB()
     })
   }
 
@@ -123,10 +144,21 @@ export function ResultsPage() {
           <div className="space-y-3">
             <button
               onClick={handleGetReport}
-              className="w-full py-5 px-6 bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-white rounded-xl font-bold text-xl flex items-center justify-center gap-3 transition-all shadow-lg shadow-green-500/30 hover:shadow-green-500/50 hover:scale-[1.02] active:scale-[0.98]"
+              disabled={isRedirecting}
+              aria-busy={isRedirecting}
+              className="w-full py-5 px-6 bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-white rounded-xl font-bold text-xl flex items-center justify-center gap-3 transition-all shadow-lg shadow-green-500/30 hover:shadow-green-500/50 hover:scale-[1.02] active:scale-[0.98] disabled:opacity-80 disabled:cursor-wait disabled:hover:scale-100"
             >
-              <Lock size={24} />
-              Получить отчёт со скидкой 500 руб!
+              {isRedirecting ? (
+                <>
+                  <Loader2 size={24} className="animate-spin" />
+                  Переходим к оплате...
+                </>
+              ) : (
+                <>
+                  <Lock size={24} />
+                  Получить отчёт со скидкой 500 руб!
+                </>
+              )}
             </button>
           </div>
         </div>
