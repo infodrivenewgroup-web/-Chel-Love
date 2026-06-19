@@ -1,0 +1,87 @@
+# Robots.txt для «Детектор верности онлайн» - Проверка партнера на верность
+# https://v0-love-chek.vercel.app
+# Сервис: Детектор верности онлайн - проверить парня, девушку, мужа, жену
+
+User-agent: *
+Allow: /
+Allow: /reviews
+Allow: /blog
+Allow: /amp
+Allow: /privacy
+Allow: /#check-form
+Allow: /#faq
+
+# Запрет индексации служебных и демо страниц
+Disallow: /api/
+Disallow: /_next/
+Disallow: /scripts/
+Disallow: /.well-known/
+Disallow: /examples
+Disallow: /courses
+Disallow: /courses/*
+
+# Карта сайта
+Sitemap: https://v0-love-chek.vercel.app/sitemap.xml
+
+# Clean-param для Яндекса (удаление незначащих GET-параметров из индекса)
+Clean-param: etext /
+Clean-param: ybaip /
+Clean-param: utm_source&utm_medium&utm_campaign&utm_content&utm_term&yclid&gclid&fbclid /
+
+# Специальные правила для Яндекса (приоритет)
+User-agent: Yandex
+Allow: /
+Allow: /reviews
+Allow: /blog
+Allow: /amp
+Allow: /feed
+Allow: /feed.xml
+Allow: /yandex-feed
+Allow: /#check-form
+Allow: /#faq
+Disallow: /examples
+Disallow: /courses
+Disallow: /courses/*
+Disallow: /api/
+Crawl-delay: 0.3
+Host: https://v0-love-chek.vercel.app
+
+# Специальные правила для Google
+User-agent: Googlebot
+Allow: /
+Allow: /reviews
+Allow: /blog
+Allow: /amp
+Allow: /feed
+Allow: /#check-form
+Allow: /#faq
+Disallow: /examples
+Disallow: /courses
+Disallow: /courses/*
+Disallow: /api/
+
+# Специальные правила для Google Images
+User-agent: Googlebot-Image
+Allow: /og-image.jpg
+Allow: /favicon*.png
+Disallow: /api/
+
+# Специальные правила для Bing
+User-agent: Bingbot
+Allow: /
+Allow: /reviews
+Allow: /blog
+Disallow: /examples
+Disallow: /courses
+Disallow: /api/
+Crawl-delay: 0.5
+
+# Mail.ru бот
+User-agent: Mail.RU_Bot
+Allow: /
+Allow: /reviews
+Allow: /blog
+Disallow: /examples
+Disallow: /courses
+Disallow: /api/
+Crawl-delay: 0.5
