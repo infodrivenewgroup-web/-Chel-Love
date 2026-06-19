@@ -1,5 +1,5 @@
 # Robots.txt для «Проверка на верность онлайн» - Проверка партнера на верность
-# https://v0-check-love-online.vercel.app
+# https://love-service-private.vercel.app
 # Сервис: Проверка на верность онлайн - проверить парня, девушку, мужа, жену
 
 User-agent: *
@@ -21,7 +21,7 @@ Disallow: /courses
 Disallow: /courses/*
 
 # Карта сайта
-Sitemap: https://v0-check-love-online.vercel.app/sitemap.xml
+Sitemap: https://love-service-private.vercel.app/sitemap.xml
 
 # Clean-param для Яндекса (удаление незначащих GET-параметров из индекса)
 Clean-param: etext /
@@ -44,7 +44,7 @@ Disallow: /courses
 Disallow: /courses/*
 Disallow: /api/
 Crawl-delay: 0.3
-Host: https://v0-check-love-online.vercel.app
+Host: https://love-service-private.vercel.app
 
 # Специальные правила для Google
 User-agent: Googlebot

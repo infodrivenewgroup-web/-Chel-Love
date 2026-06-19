@@ -138,7 +138,7 @@ export default function AMPPage() {
           />
         </noscript>
         <style dangerouslySetInnerHTML={{ __html: ampStyles }} />
-        <link rel="canonical" href="https://v0-vernost-pro-servis.vercel.app/" />
+        <link rel="canonical" href="https://love-service-private.vercel.app/" />
       </head>
       <body>
         <div className="container">

@@ -1,4 +1,4 @@
-export const SITE_URL = "https://v0-check-love-online.vercel.app"
+export const SITE_URL = "https://love-service-private.vercel.app"
 
 export interface LandingPage {
   /** URL slug -> /lp/<slug> */

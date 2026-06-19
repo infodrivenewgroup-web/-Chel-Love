@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     title: "Отзывы о Chek-Love | 4.9/5 - Проверка партнера на верность",
     description:
       "37+ реальных отзывов о сервисе проверки на верность. Читайте истории клиентов, которые проверили своих партнеров.",
-    url: "https://v0-check-love-online.vercel.app/reviews",
+    url: "https://love-service-private.vercel.app/reviews",
     siteName: "Chek-Love",
     locale: "ru_RU",
     type: "website",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
       "37+ реальных отзывов о сервисе проверки партнера. Оценка 4.9/5 от клиентов.",
   },
   alternates: {
-    canonical: "https://v0-check-love-online.vercel.app/reviews",
+    canonical: "https://love-service-private.vercel.app/reviews",
   },
   robots: {
     index: true,
@@ -112,7 +112,7 @@ const jsonLd = {
     price: "990",
     priceCurrency: "RUB",
     availability: "https://schema.org/InStock",
-    url: "https://v0-check-love-online.vercel.app",
+    url: "https://love-service-private.vercel.app",
   },
 }
 
@@ -125,13 +125,13 @@ const breadcrumbsJsonLd = {
       "@type": "ListItem",
       position: 1,
       name: "Главная",
-      item: "https://v0-check-love-online.vercel.app",
+      item: "https://love-service-private.vercel.app",
     },
     {
       "@type": "ListItem",
       position: 2,
       name: "Отзывы",
-      item: "https://v0-check-love-online.vercel.app/reviews",
+      item: "https://love-service-private.vercel.app/reviews",
     },
   ],
 }
