@@ -2,14 +2,14 @@ import { NextResponse } from "next/server"
 
 // YML фид для Яндекс.Директ и Яндекс.Бизнес
 export async function GET() {
-  const siteUrl = "https://v0-love-chek.vercel.app"
+  const siteUrl = "https://v0-check-love-online.vercel.app"
   const currentDate = new Date().toISOString().split("T")[0]
 
   const yml = `<?xml version="1.0" encoding="UTF-8"?>
 <yml_catalog date="${currentDate}">
   <shop>
-    <name>Детектор верности онлайн</name>
-    <company>Детектор верности онлайн — Проверка партнера на измену</company>
+    <name>Проверка на верность онлайн</name>
+    <company>Проверка на верность онлайн — Проверка партнера на измену</company>
     <url>${siteUrl}</url>
     <currencies>
       <currency id="RUB" rate="1"/>

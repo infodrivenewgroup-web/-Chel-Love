@@ -4,68 +4,68 @@ import { NextResponse } from "next/server"
 const hotKeywords = [
   {
     keyword: "проверка партнера на измену",
-    url: "https://v0-love-chek.vercel.app/#check-form",
+    url: "https://v0-check-love-online.vercel.app/#check-form",
     title: "Проверка партнера на измену онлайн — Chek-Love",
     description: "Анонимная проверка партнера на измену за 5 минут. Узнайте правду о верности мужа или жены через ВКонтакте, Telegram, Instagram.",
   },
   {
     keyword: "как узнать изменяет ли муж",
-    url: "https://v0-love-chek.vercel.app/#check-form",
+    url: "https://v0-check-love-online.vercel.app/#check-form",
     title: "Как узнать изменяет ли муж — проверка онлайн",
     description: "Проверьте мужа на измену анонимно. Анализ соцсетей, мессенджеров и сайтов знакомств за 5 минут.",
   },
   {
     keyword: "как узнать изменяет ли жена",
-    url: "https://v0-love-chek.vercel.app/#check-form",
+    url: "https://v0-check-love-online.vercel.app/#check-form",
     title: "Как узнать изменяет ли жена — анонимная проверка",
     description: "Проверьте жену на измену онлайн. Полный анализ ВКонтакте, Telegram, WhatsApp и сайтов знакомств.",
   },
   {
     keyword: "проверить партнера по номеру телефона",
-    url: "https://v0-love-chek.vercel.app/#check-form",
+    url: "https://v0-check-love-online.vercel.app/#check-form",
     title: "Проверить партнера по номеру телефона — Chek-Love",
     description: "Введите номер телефона и получите полный отчет о цифровой активности партнера за 5 минут.",
   },
   {
     keyword: "проверка верности онлайн",
-    url: "https://v0-love-chek.vercel.app/#check-form",
+    url: "https://v0-check-love-online.vercel.app/#check-form",
     title: "Проверка верности онлайн — быстро и анонимно",
     description: "Сервис проверки верности партнера. 3000+ успешных проверок. 100% конфиденциальность.",
   },
   {
     keyword: "проверить мужа на измену",
-    url: "https://v0-love-chek.vercel.app/#check-form",
+    url: "https://v0-check-love-online.vercel.app/#check-form",
     title: "Проверить мужа на измену — результат за 5 минут",
     description: "Анонимная проверка мужа на измену через соцсети и мессенджеры. Узнайте правду сегодня.",
   },
   {
     keyword: "проверить жену на измену",
-    url: "https://v0-love-chek.vercel.app/#check-form",
+    url: "https://v0-check-love-online.vercel.app/#check-form",
     title: "Проверить жену на измену онлайн — Chek-Love",
     description: "Проверьте жену на верность анонимно. Полный анализ соцсетей и сайтов знакомств.",
   },
   {
     keyword: "проверка партнера Москва",
-    url: "https://v0-love-chek.vercel.app/#check-form",
+    url: "https://v0-check-love-online.vercel.app/#check-form",
     title: "Проверка партнера в Москве — онлайн сервис",
     description: "Проверка партнера на измену в Москве. Быстрый результат за 5 минут. Работаем 24/7.",
   },
   {
     keyword: "анонимная проверка партнера",
-    url: "https://v0-love-chek.vercel.app/#check-form",
+    url: "https://v0-check-love-online.vercel.app/#check-form",
     title: "Анонимная проверка партнера на измену",
     description: "100% анонимная проверка партнера. Он никогда не узнает. Гарантия конфиденциальности.",
   },
   {
     keyword: "проверка партнера по ВК",
-    url: "https://v0-love-chek.vercel.app/#check-form",
+    url: "https://v0-check-love-online.vercel.app/#check-form",
     title: "Проверка партнера по ВКонтакте — Chek-Love",
     description: "Проверьте партнера по профилю ВКонтакте. Анализ друзей, сообщений, скрытых профилей.",
   },
 ]
 
 export async function GET() {
-  const siteUrl = "https://v0-love-chek.vercel.app"
+  const siteUrl = "https://v0-check-love-online.vercel.app"
   const currentDate = new Date().toISOString()
 
   // Генерируем RSS фид

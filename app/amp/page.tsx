@@ -1,7 +1,7 @@
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Chek-Love — Детектор верности онлайн | AMP",
+  title: "Chek-Love — Проверка на верность онлайн | AMP",
   description:
     "Профессиональный онлайн-сервис проверки партнера на верность. Анализ ВКонтакте, Telegram, WhatsApp, Instagram. 100% анонимно.",
   keywords:
