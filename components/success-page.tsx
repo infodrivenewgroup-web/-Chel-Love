@@ -141,7 +141,7 @@ export function SuccessPage() {
             <Heart className="w-7 h-7 text-primary fill-primary" />
             <Search className="w-3 h-3 text-white absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
           </div>
-          <span className="text-xl font-bold text-white">Детектор верности онлайн</span>
+          <span className="text-xl font-bold text-white">Проверка на верность онлайн</span>
         </div>
         <p className="text-gray-400 text-sm">
           Профессиональный онлайн-сервис. 100% анонимность и гарантированный результат.

@@ -2,7 +2,7 @@ import React from "react"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Отзывы о Chek-Love | Детектор верности онлайн - реальные отзывы клиентов",
+  title: "Отзывы о Chek-Love | Проверка на верность онлайн - реальные отзывы клиентов",
   description:
     "Читайте реальные отзывы о сервисе Chek-Love. Проверка партнера на верность - 37+ отзывов с оценкой 4.9/5. Проверить парня, девушку, мужа, жену онлайн.",
   keywords:
@@ -11,19 +11,19 @@ export const metadata: Metadata = {
     title: "Отзывы о Chek-Love | 4.9/5 - Проверка партнера на верность",
     description:
       "37+ реальных отзывов о сервисе проверки на верность. Читайте истории клиентов, которые проверили своих партнеров.",
-    url: "https://v0-love-chek.vercel.app/reviews",
+    url: "https://v0-check-love-online.vercel.app/reviews",
     siteName: "Chek-Love",
     locale: "ru_RU",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Отзывы о Chek-Love | Детектор верности онлайн",
+    title: "Отзывы о Chek-Love | Проверка на верность онлайн",
     description:
       "37+ реальных отзывов о сервисе проверки партнера. Оценка 4.9/5 от клиентов.",
   },
   alternates: {
-    canonical: "https://v0-love-chek.vercel.app/reviews",
+    canonical: "https://v0-check-love-online.vercel.app/reviews",
   },
   robots: {
     index: true,
@@ -112,7 +112,7 @@ const jsonLd = {
     price: "990",
     priceCurrency: "RUB",
     availability: "https://schema.org/InStock",
-    url: "https://v0-love-chek.vercel.app",
+    url: "https://v0-check-love-online.vercel.app",
   },
 }
 
@@ -125,13 +125,13 @@ const breadcrumbsJsonLd = {
       "@type": "ListItem",
       position: 1,
       name: "Главная",
-      item: "https://v0-love-chek.vercel.app",
+      item: "https://v0-check-love-online.vercel.app",
     },
     {
       "@type": "ListItem",
       position: 2,
       name: "Отзывы",
-      item: "https://v0-love-chek.vercel.app/reviews",
+      item: "https://v0-check-love-online.vercel.app/reviews",
     },
   ],
 }

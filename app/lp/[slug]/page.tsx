@@ -16,7 +16,7 @@ export async function generateMetadata({
   const page = getLandingPage(slug)
 
   if (!page) {
-    return { title: "Страница не найдена | Детектор верности онлайн" }
+    return { title: "Страница не найдена | Проверка на верность онлайн" }
   }
 
   const url = `${SITE_URL}/lp/${page.slug}`
@@ -39,7 +39,7 @@ export async function generateMetadata({
       description: page.description,
       type: "website",
       locale: "ru_RU",
-      siteName: "Детектор верности онлайн",
+      siteName: "Проверка на верность онлайн",
       url,
       images: [
         {
@@ -82,7 +82,7 @@ export default async function LandingPageRoute({
     description: page.description,
     provider: {
       "@type": "Organization",
-      name: "Детектор верности онлайн",
+      name: "Проверка на верность онлайн",
       url: SITE_URL,
     },
     areaServed: {

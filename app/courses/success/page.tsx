@@ -27,7 +27,7 @@ export default function CourseSuccessPage() {
                 <Search className="w-4 h-4 text-white absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
               </div>
               <div className="flex flex-col">
-                <span className="text-white font-bold text-lg leading-tight">Детектор верности онлайн</span>
+                <span className="text-white font-bold text-lg leading-tight">Проверка на верность онлайн</span>
                 <span className="text-muted-foreground text-[10px] hidden sm:block">
                   Профессиональный Онлайн-сервис
                 </span>
@@ -167,9 +167,9 @@ export default function CourseSuccessPage() {
               <Heart className="w-7 h-7 text-primary fill-primary" />
               <Search className="w-3 h-3 text-white absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
             </div>
-            <span className="text-white font-bold text-lg">Детектор верности онлайн</span>
+            <span className="text-white font-bold text-lg">Проверка на верность онлайн</span>
           </div>
-          <p className="text-muted-foreground text-sm mb-4">© All Rights Reserved. «Детектор верности онлайн» 2023-2025.</p>
+          <p className="text-muted-foreground text-sm mb-4">© All Rights Reserved. «Проверка на верность онлайн» 2023-2025.</p>
           <p className="text-muted-foreground text-xs max-w-2xl mx-auto">
             Внимание: Информация, размещённая на сайте, носит исключительно информационный характер и ни при каких
             условиях не является публичной офертой. Мы используем файлы cookie для улучшения качества обслуживания и

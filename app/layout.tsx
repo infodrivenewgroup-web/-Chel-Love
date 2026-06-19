@@ -10,14 +10,14 @@ const inter = Inter({ subsets: ["latin", "cyrillic"] })
 const jetbrainsMono = JetBrains_Mono({ subsets: ["latin", "cyrillic"] })
 
 export const metadata: Metadata = {
-  title: "Детектор верности онлайн | Узнай с кем общается ваша половинка за 5 минут!",
+  title: "Проверка на верность онлайн. Узнай правду за 5 минут! | Анонимно",
   description:
     "Проверь на верность своего парня/девушку и узнай что скрывает твой партнер в ВК, ТГ и в переписках - Гарантированный результат!",
   keywords:
     "проверка на верность, проверить девушку, как проверить мужа, проверить любимого, как узнать с кем общается, проверка парня, проверка девушки, как узнать об измене, проверка парня на верность, проверить жену, проверить женщину, проверка партнера на измену, как узнать изменяет ли муж, узнать изменяет ли жена, как проверить мужа на верность, как проверить жену на верность, проверка на измену онлайн, анонимная проверка партнера",
-  authors: [{ name: "Детектор верности онлайн" }],
-  creator: "Детектор верности онлайн",
-  publisher: "Детектор верности онлайн",
+  authors: [{ name: "Проверка на верность онлайн" }],
+  creator: "Проверка на верность онлайн",
+  publisher: "Проверка на верность онлайн",
   formatDetection: {
     email: false,
     address: false,
@@ -37,34 +37,34 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://v0-love-chek.vercel.app/",
+    canonical: "https://v0-check-love-online.vercel.app/",
     types: {
-      "application/xhtml+xml": "https://v0-love-chek.vercel.app/amp",
+      "application/xhtml+xml": "https://v0-check-love-online.vercel.app/amp",
     },
   },
   openGraph: {
-    title: "Детектор верности онлайн | Узнай с кем общается ваша половинка за 5 минут!",
+    title: "Проверка на верность онлайн | Узнай с кем общается ваша половинка за 5 минут!",
     description:
       "Проверь на верность своего парня/девушку и узнай что скрывает твой партнер в ВК, ТГ и в переписках - Гарантированный результат!",
     type: "website",
     locale: "ru_RU",
-    siteName: "Детектор верности онлайн",
-    url: "https://v0-love-chek.vercel.app/",
+    siteName: "Проверка на верность онлайн",
+    url: "https://v0-check-love-online.vercel.app/",
     images: [
       {
-        url: "https://v0-love-chek.vercel.app/og-image.jpg",
+        url: "https://v0-check-love-online.vercel.app/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Детектор верности онлайн — проверка партнера на измену онлайн",
+        alt: "Проверка на верность онлайн — проверка партнера на измену онлайн",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Детектор верности онлайн | Узнай с кем общается ваша половинка за 5 минут!",
+    title: "Проверка на верность онлайн | Узнай с кем общается ваша половинка за 5 минут!",
     description:
       "Проверь на верность своего парня/девушку и узнай что скрывает твой партнер в ВК, ТГ и в переписках - Гарантированный результат!",
-    images: ["https://v0-love-chek.vercel.app/og-image.jpg"],
+    images: ["https://v0-check-love-online.vercel.app/og-image.jpg"],
   },
   verification: {
     google: ["VFhf-C5n9OZWtR-nH06yOMaegMJeIE1aM0MUZ9-B_-Y", "_ba_dhDQoSVzVZosEtK8TTt06y3oKc55qRneeYG6_QA"],
@@ -114,7 +114,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
-  const siteUrl = "https://v0-love-chek.vercel.app"
+  const siteUrl = "https://v0-check-love-online.vercel.app"
 
   return (
     <html lang="ru" dir="ltr">
@@ -139,20 +139,20 @@ export default function RootLayout({
         {/* Дополнительные мета-теги для улучшения сниппета */}
         <meta name="subject" content="Проверка партнера на верность онлайн - анонимная проверка по соцсетям и мессенджерам" />
         <meta name="abstract" content="Сервис анонимной проверки партнера на верность. Узнайте с кем общается ваша половинка в ВК, Телеграм, WhatsApp за 5 минут." />
-        <meta name="topic" content="Детектор верности онлайн, проверка парня, проверка девушки, как узнать об измене" />
-        <meta name="summary" content="Детектор верности онлайн - проверка партнера на верность за 5 минут. Анализ ВКонтакте, Telegram, сайтов знакомств. 100% анонимно." />
+        <meta name="topic" content="Проверка на верность онлайн, проверка парня, проверка девушки, как узнать об измене" />
+        <meta name="summary" content="Проверка на верность онлайн - проверка партнера на верность за 5 минут. Анализ ВКонтакте, Telegram, сайтов знакомств. 100% анонимно." />
         <meta name="classification" content="Онлайн-сервис проверки верности партнера" />
-        <meta name="designer" content="Детектор верности онлайн" />
-        <meta name="copyright" content="Детектор верности онлайн 2024-2025" />
+        <meta name="designer" content="Проверка на верность онлайн" />
+        <meta name="copyright" content="Проверка на верность онлайн 2024-2025" />
         <meta name="reply-to" content="support@love-detektor.ru" />
-        <meta name="owner" content="Детектор верности онлайн" />
-        <meta name="url" content="https://v0-love-chek.vercel.app" />
-        <meta name="identifier-URL" content="https://v0-love-chek.vercel.app" />
+        <meta name="owner" content="Проверка на верность онлайн" />
+        <meta name="url" content="https://v0-check-love-online.vercel.app" />
+        <meta name="identifier-URL" content="https://v0-check-love-online.vercel.app" />
         <meta name="coverage" content="Worldwide" />
 
         {/* canonical задаётся через Metadata API в каждой странице (см. alternates.canonical),
             поэтому жёсткий тег здесь удалён — иначе все страницы ошибочно каноникалят на главную. */}
-        <link rel="amphtml" href="https://v0-love-chek.vercel.app/amp" />
+        <link rel="amphtml" href="https://v0-check-love-online.vercel.app/amp" />
 
         <link rel="icon" href="/favicon.png" sizes="any" />
         <link rel="icon" href="/favicon-16x16.png" sizes="16x16" type="image/png" />
@@ -267,8 +267,8 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "WebSite",
-              name: "Детектор верности онлайн — Проверка партнера на верность",
-              alternateName: ["Проверка партнера на верность онлайн", "Анонимная проверка верности", "Love Detektor"],
+              name: "Проверка на верность онлайн — Проверка партнера на верность",
+              alternateName: ["Проверка партнера на верность онлайн", "Анонимная проверка верности", "Проверка на верность"],
               url: siteUrl,
               description:
                 "Проверка партнера на верность онлайн за 5 минут. Узнайте изменяет ли муж или жена через ВКонтакте, Telegram, Instagram. Анонимная проверка партнера. 3000+ успешных проверок.",
@@ -292,8 +292,8 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
-              name: "Детектор верности онлайн",
-              alternateName: ["Love Detektor", "ЛавДетектор", "Проверка верности"],
+              name: "Проверка на верность онлайн",
+              alternateName: ["Проверка на верность онлайн", "Проверка партнёра на верность", "Проверка верности"],
               url: siteUrl,
               logo: {
                 "@type": "ImageObject",
@@ -360,7 +360,7 @@ export default function RootLayout({
               url: siteUrl,
               provider: {
                 "@type": "Organization",
-                name: "Детектор верности онлайн",
+                name: "Проверка на верность онлайн",
                 url: siteUrl,
               },
               areaServed: [
@@ -408,7 +408,7 @@ export default function RootLayout({
                   name: "Как проверить партнера на верность онлайн?",
                   acceptedAnswer: {
                     "@type": "Answer",
-                    text: "Сервис «Детектор верности онлайн» анализирует цифровой след партнера в социальных сетях ВКонтакте, Telegram, WhatsApp, Instagram, выявляя скрытые профили и активность на сайтах знакомств. Проверка полностью анонимна и занимает около 5 минут. Партнер никогда не узнает о проверке.",
+                    text: "Сервис «Проверка на верность онлайн» анализирует цифровой след партнера в социальных сетях ВКонтакте, Telegram, WhatsApp, Instagram, выявляя скрытые профили и активность на сайтах знакомств. Проверка полностью анонимна и занимает около 5 минут. Партнер никогда не узнает о проверке.",
                   },
                 },
                 {
@@ -455,13 +455,13 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Product",
-              name: "Проверка партнера на верность онлайн — Детектор верности онлайн",
+              name: "Проверка партнера на верность онлайн — Проверка на верность онлайн",
               description:
                 "Комплексная проверка партнера по номеру телефона или профилю ВКонтакте. Анализ ВКонтакте, Telegram, WhatsApp, Instagram и сайтов знакомств за 5 минут.",
               image: `${siteUrl}/og-image.jpg`,
               brand: {
                 "@type": "Brand",
-                name: "Детектор верности онлайн",
+                name: "Проверка на верность онлайн",
               },
               offers: {
                 "@type": "Offer",
@@ -472,7 +472,7 @@ export default function RootLayout({
                 priceValidUntil: "2025-12-31",
                 seller: {
                   "@type": "Organization",
-                  name: "Детектор верности онлайн",
+                  name: "Проверка на верность онлайн",
                 },
               },
               aggregateRating: {
@@ -521,7 +521,7 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
-              name: "Детектор верности онлайн — Проверка партнера Москва",
+              name: "Проверка на верность онлайн — Проверка партнера Москва",
               image: `${siteUrl}/og-image.jpg`,
               "@id": `${siteUrl}/#localbusiness`,
               url: siteUrl,
@@ -560,7 +560,7 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "SiteNavigationElement",
-              name: "Навигация «Детектор верности онлайн»",
+              name: "Навигация «Проверка на верность онлайн»",
               url: siteUrl,
               hasPart: [
                 {
