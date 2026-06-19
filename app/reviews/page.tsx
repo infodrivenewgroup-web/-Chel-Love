@@ -452,7 +452,7 @@ export default function ReviewsPage() {
               </div>
               <div className="flex items-center gap-3">
                 <a
-                  href="https://v0-check-love-online.vercel.app"
+                  href="https://love-service-private.vercel.app"
                   className="hidden sm:flex items-center gap-2 px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors text-sm font-medium"
                 >
                   <Heart className="w-4 h-4" />
@@ -515,7 +515,7 @@ export default function ReviewsPage() {
               {/* CTA */}
               <div className="flex-shrink-0">
                 <a
-                  href="https://v0-check-love-online.vercel.app"
+                  href="https://love-service-private.vercel.app"
                   className="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-pink-500 to-red-500 text-white rounded-xl hover:from-pink-600 hover:to-red-600 transition-all shadow-lg hover:shadow-xl font-medium"
                 >
                   Проверить партнера
@@ -665,7 +665,7 @@ export default function ReviewsPage() {
                   </p>
                   <div className="flex flex-wrap items-center justify-center md:justify-start gap-4">
                     <a
-                      href="https://v0-check-love-online.vercel.app"
+                      href="https://love-service-private.vercel.app"
                       className="inline-flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-pink-500 to-red-500 text-white rounded-lg hover:from-pink-600 hover:to-red-600 transition-all font-medium text-sm"
                     >
                       <Heart className="w-4 h-4" />
@@ -712,7 +712,7 @@ export default function ReviewsPage() {
               
               <div className="flex flex-wrap items-center justify-center gap-6 text-sm">
                 <a
-                  href="https://v0-check-love-online.vercel.app"
+                  href="https://love-service-private.vercel.app"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
                   Chek-Love

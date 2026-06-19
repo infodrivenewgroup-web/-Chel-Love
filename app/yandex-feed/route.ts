@@ -2,7 +2,7 @@ import { NextResponse } from "next/server"
 
 // YML фид для Яндекс.Директ и Яндекс.Бизнес
 export async function GET() {
-  const siteUrl = "https://v0-check-love-online.vercel.app"
+  const siteUrl = "https://love-service-private.vercel.app"
   const currentDate = new Date().toISOString().split("T")[0]
 
   const yml = `<?xml version="1.0" encoding="UTF-8"?>

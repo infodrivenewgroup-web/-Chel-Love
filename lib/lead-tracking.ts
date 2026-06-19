@@ -283,13 +283,20 @@ export async function upsertLead(): Promise<UpsertResult> {
     phone_or_vk_present: hasPhoneOrVk(),
   })
 
+  // Hard timeout so a slow/hanging request to site "Б" never blocks the redirect.
+  const controller = typeof AbortController !== "undefined" ? new AbortController() : undefined
+  const timeoutId = controller ? setTimeout(() => controller.abort(), 2500) : undefined
+
   try {
     const res = await fetch(SITE_B_UPSERT_URL, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(body),
       keepalive: true,
+      signal: controller?.signal,
     })
+
+    if (timeoutId) clearTimeout(timeoutId)
 
     if (!res.ok) return { ok: false }
 
@@ -304,6 +311,7 @@ export async function upsertLead(): Promise<UpsertResult> {
     }
     return { ok: false }
   } catch {
+    if (timeoutId) clearTimeout(timeoutId)
     return { ok: false }
   }
 }

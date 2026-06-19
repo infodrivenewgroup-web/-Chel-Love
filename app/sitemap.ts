@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next"
 import { LANDING_PAGES } from "@/lib/landing-pages"
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://v0-check-love-online.vercel.app"
+  const baseUrl = "https://love-service-private.vercel.app"
   const currentDate = new Date()
 
   // Посадочные страницы под объявления Яндекс Директ — высокий приоритет,

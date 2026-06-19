@@ -4,26 +4,26 @@ import { NextResponse } from "next/server"
 const turboPages = [
   {
     title: "Проверка партнера на измену онлайн",
-    url: "https://v0-check-love-online.vercel.app/",
+    url: "https://love-service-private.vercel.app/",
     content:
       "Анонимная проверка партнера на измену за 5 минут. Узнайте правду о верности мужа или жены через ВКонтакте, Telegram, Instagram и сайты знакомств. 3000+ успешных проверок. 100% конфиденциальность.",
   },
   {
     title: "Как узнать изменяет ли муж — признаки и проверка",
-    url: "https://v0-check-love-online.vercel.app/blog",
+    url: "https://love-service-private.vercel.app/blog",
     content:
       "Подозреваете мужа в измене? Проверьте его анонимно через наш сервис. Анализ соцсетей ВКонтакте, Telegram, WhatsApp, Instagram и сайтов знакомств. Результат за 5 минут.",
   },
   {
     title: "Как проверить жену на верность онлайн",
-    url: "https://v0-check-love-online.vercel.app/blog",
+    url: "https://love-service-private.vercel.app/blog",
     content:
       "Проверка жены на измену без её ведома. Полный анализ цифровой активности: социальные сети, мессенджеры, сайты знакомств. Анонимно и конфиденциально.",
   },
 ]
 
 export async function GET() {
-  const siteUrl = "https://v0-check-love-online.vercel.app"
+  const siteUrl = "https://love-service-private.vercel.app"
 
   const turboRss = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:yandex="http://news.yandex.ru" xmlns:media="http://search.yahoo.com/mrss/" xmlns:turbo="http://turbo.yandex.ru">

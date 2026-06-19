@@ -37,9 +37,9 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://v0-check-love-online.vercel.app/",
+    canonical: "https://love-service-private.vercel.app/",
     types: {
-      "application/xhtml+xml": "https://v0-check-love-online.vercel.app/amp",
+      "application/xhtml+xml": "https://love-service-private.vercel.app/amp",
     },
   },
   openGraph: {
@@ -49,10 +49,10 @@ export const metadata: Metadata = {
     type: "website",
     locale: "ru_RU",
     siteName: "Проверка на верность онлайн",
-    url: "https://v0-check-love-online.vercel.app/",
+    url: "https://love-service-private.vercel.app/",
     images: [
       {
-        url: "https://v0-check-love-online.vercel.app/og-image.jpg",
+        url: "https://love-service-private.vercel.app/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Проверка на верность онлайн — проверка партнера на измену онлайн",
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
     title: "Проверка на верность онлайн | Узнай с кем общается ваша половинка за 5 минут!",
     description:
       "Проверь на верность своего парня/девушку и узнай что скрывает твой партнер в ВК, ТГ и в переписках - Гарантированный результат!",
-    images: ["https://v0-check-love-online.vercel.app/og-image.jpg"],
+    images: ["https://love-service-private.vercel.app/og-image.jpg"],
   },
   verification: {
     google: ["VFhf-C5n9OZWtR-nH06yOMaegMJeIE1aM0MUZ9-B_-Y", "_ba_dhDQoSVzVZosEtK8TTt06y3oKc55qRneeYG6_QA"],
@@ -114,7 +114,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
-  const siteUrl = "https://v0-check-love-online.vercel.app"
+  const siteUrl = "https://love-service-private.vercel.app"
 
   return (
     <html lang="ru" dir="ltr">
@@ -146,13 +146,13 @@ export default function RootLayout({
         <meta name="copyright" content="Проверка на верность онлайн 2024-2025" />
         <meta name="reply-to" content="support@love-detektor.ru" />
         <meta name="owner" content="Проверка на верность онлайн" />
-        <meta name="url" content="https://v0-check-love-online.vercel.app" />
-        <meta name="identifier-URL" content="https://v0-check-love-online.vercel.app" />
+        <meta name="url" content="https://love-service-private.vercel.app" />
+        <meta name="identifier-URL" content="https://love-service-private.vercel.app" />
         <meta name="coverage" content="Worldwide" />
 
         {/* canonical задаётся через Metadata API в каждой странице (см. alternates.canonical),
             поэтому жёсткий тег здесь удалён — иначе все страницы ошибочно каноникалят на главную. */}
-        <link rel="amphtml" href="https://v0-check-love-online.vercel.app/amp" />
+        <link rel="amphtml" href="https://love-service-private.vercel.app/amp" />
 
         <link rel="icon" href="/favicon.png" sizes="any" />
         <link rel="icon" href="/favicon-16x16.png" sizes="16x16" type="image/png" />
